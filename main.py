@@ -15,7 +15,7 @@ with open("Список ПТО.txt", "r", encoding='utf8') as file2:
 for lit1 in list1:
     f = True
     for l2, lit2 in enumerate(list2):
-        if Levenshtein.ratio(lit1, lit2)>0.8:
+        if Levenshtein.ratio(lit1, lit2)>0.7:
             both.write(lit1+' : '+lit2)
             f = False
             if l2 in c2:
